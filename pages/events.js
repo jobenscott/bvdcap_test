@@ -1,5 +1,6 @@
 import { Container, Grid } from "@mui/material";
 import Head from 'next/head';
+import PageHeader from "../components/PageHeader/PageHeader";
 
 export default function Index({
 }) {
@@ -9,7 +10,7 @@ export default function Index({
       </Head>
       <Grid container sx={{ display: "flex" }}>
         <Grid item sx={{ width: "100%" }}>
-            <h1>Events page</h1>
+            <PageHeader pageHeader={"Events"} />
         </Grid>
       </Grid>
     </Container>
