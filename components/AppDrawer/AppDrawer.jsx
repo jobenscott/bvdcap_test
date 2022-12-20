@@ -15,22 +15,27 @@ const drawerBleeding = 56;
 
 const navLinks = [
     {
-      id: "1",
+        id: "1",
+        title: "Home",
+        path: "/"
+      },
+    {
+      id: "2",
       title: "Members",
       path: "members"
     },
     {
-      id: "2",
+      id: "3",
       title: "Events",
       path: "events"
     },
     {
-      id: "3",
+      id: "4",
       title: "About Us",
       path: "about"
     },
     {
-      id: "4",
+      id: "5",
       title: "History",
       path: "history"
     }
