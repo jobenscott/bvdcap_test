@@ -9,7 +9,7 @@ export default function Index({
       </Head>
       <Grid container sx={{ display: "flex" }}>
         <Grid item sx={{ width: "100%", background: "#3D5467", minHeight: "100vh" }}>
-            <h1>About page</h1>
+            <h1>History page</h1>
         </Grid>
       </Grid>
     </Container>

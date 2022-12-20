@@ -38,11 +38,23 @@ function Navbar() {
   const navLinks = [
     {
       id: "1",
-      path: "Members"
+      title: "Members",
+      path: "members"
     },
     {
       id: "2",
-      path: "Resources"
+      title: "Events",
+      path: "events"
+    },
+    {
+      id: "3",
+      title: "About Us",
+      path: "about"
+    },
+    {
+      id: "4",
+      title: "History",
+      path: "history"
     }
   ]
 
@@ -65,7 +77,7 @@ function Navbar() {
             onClick={() => router.push(link.path)}
             sx={{ mt: 1, fontSize: { lg: "1.2rem", md: "1.2rem", sm: "1rem", xs: ".8rem" }, }}
           >
-            {link.path}
+            {link.title}
           </Button>
         ))}
       </Toolbar>

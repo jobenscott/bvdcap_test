@@ -61,7 +61,7 @@ const ComingSoon = () => {
                 color: "white",
                 fontWeight: { lg: "800", md: "600", sm: "600", xs: "600" },
                 fontSize: { lg: "4rem", md: "3rem", sm: "2.5rem", xs: "1.7rem" },
-                mt: { lg: "15rem", md: "15rem", sm: "12rem", xs: "10rem" },
+                mt: { lg: "15rem", md: "15rem", sm: "12rem", xs: "5rem" },
                 textShadow: "3px 3px 2px rgba(0, 0, 0, 1),7px -3px 18px rgba(41, 40, 37, 1);",
                 textAlign: "center"
               }}
