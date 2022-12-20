@@ -70,7 +70,7 @@ const Events = ({pageHeader}) => {
             >
               {pageHeader}
             </Typography>
-             <Box sx={{borderBottom: "solid 1px white", width: 350, height: 1}}/>
+             <Box sx={{borderBottom: "solid 1px white", width: {lg: 350, md: 300, sm: 250, xs: 150}, height: 1}}/>
         </Grid>
       </Grid>
     </Container>
