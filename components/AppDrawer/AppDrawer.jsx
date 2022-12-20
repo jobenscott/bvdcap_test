@@ -56,6 +56,8 @@ const Puller = styled(Box)(({ theme }) => ({
   left: 'calc(50% - 15px)',
 }));
 
+const router = useRouter()
+
 function AppDrawer(props) {
   const { window } = props;
   const [open, setOpen] = React.useState(false);
