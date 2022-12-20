@@ -56,7 +56,7 @@ const Puller = styled(Box)(({ theme }) => ({
   left: 'calc(50% - 15px)',
 }));
 
-const router = useRouter()
+
 
 function AppDrawer(props) {
   const { window } = props;
@@ -65,6 +65,8 @@ function AppDrawer(props) {
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+
+  const router = useRouter()
 
   // This is used only for the example
   const container = window !== undefined ? () => window().document.body : undefined;
