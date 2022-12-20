@@ -4,7 +4,7 @@ import Head from 'next/head';
 export default function Index({
 }) {
   return (
-    <Container disableGutters maxWidth={false}>
+    <Container maxWidth={false}>
       <Head>
       </Head>
       <Grid container sx={{ display: "flex" }}>
