@@ -50,7 +50,7 @@ const ComingSoon = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            flexDirection: "row"
+            flexDirection: "column"
           }}
         >   
          <Typography
@@ -67,6 +67,19 @@ const ComingSoon = () => {
               }}
             >
               BVD Capital
+            </Typography>
+            <Typography
+              variant="h1"
+              gutterBottom
+              sx={{
+                zIndex: 1,
+                color: "white",
+                fontSize:{ lg: "1rem", md: "1rem", sm: ".8rem", xs: ".7rem" },
+                mt: { lg: "3rem", md: "3rem", sm: "2.5rem", xs: "2rem" },
+                textAlign: "center"
+              }}
+            >
+              Coming soon...
             </Typography>
         </Grid>
       </Grid>
