@@ -64,7 +64,7 @@ const EventList = ({ eventList }) => {
                             {eventList.map((event) => {
                                 return (
                                     <ListItem sx={{
-                                        background: "#00000042", borderRadius: 3, height: mobile ? 200 : 100, m: 2,
+                                        background: "#00000042", borderRadius: 3, height: mobile ? 300 : 100, m: 2,
                                         display: "flex",
                                         justifyContent: "space-around",
                                         alignItems: "center",
@@ -79,7 +79,7 @@ const EventList = ({ eventList }) => {
                                             }}
                                         >
                                             <ListItemText sx={{ color: "#00beff" }} primary="Host" />
-                                            <ListItemText sx={{ color: "white" }} primary={event.host} />
+                                            <ListItemText sx={{ color: "white", textAlign: "center" }} primary={event.host} />
                                         </Grid>
                                         <Grid
                                             sx={{
@@ -90,7 +90,7 @@ const EventList = ({ eventList }) => {
                                             }}
                                         >
                                             <ListItemText sx={{ color: "#00beff" }} primary="Platform" />
-                                            <ListItemText sx={{ color: "white" }} primary={event.platform} />
+                                            <ListItemText sx={{ color: "white", textAlign: "center" }} primary={event.platform} />
                                         </Grid>
                                         <Grid
                                             sx={{
@@ -101,7 +101,7 @@ const EventList = ({ eventList }) => {
                                             }}
                                         >
                                             <ListItemText sx={{ color: "#00beff" }} primary="Event Name" />
-                                            <ListItemText sx={{ color: "white" }} primary={event.title} />
+                                            <ListItemText sx={{ color: "white", textAlign: "center" }} primary={event.title} />
                                         </Grid>
                                         <Grid
                                             sx={{
