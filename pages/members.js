@@ -2,6 +2,7 @@ import { Container, Grid } from "@mui/material";
 import Head from 'next/head';
 import PageHeader from "../components/PageHeader/PageHeader";
 import PageContent from "../components/PageContent/PageContent";
+import ScrollableList from "../components/ScrollableList/ScrollableList";
 
 export default function Index({
 }) {
@@ -14,7 +15,8 @@ export default function Index({
             <PageHeader pageHeader={"Members"} />
         </Grid>
         <Grid item sx={{ width: "100%" }}>
-            <PageContent/>
+            {/* <PageContent/> */}
+            <ScrollableList/>
         </Grid>
       </Grid>
     </Container>
