@@ -2,6 +2,7 @@ import { Button, Container, Grid, styled, Typography, Paper, List, ListItem, Lis
 import { makeStyles } from "@mui/styles";
 import Image from 'next/image';
 import Link from 'next/link';
+import ExpandableListItem from "../ExpandableListItem/ExpandableListItem";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -63,59 +64,7 @@ const EventList = ({ eventList }) => {
                         }}>
                             {eventList.map((event) => {
                                 return (
-                                    <ListItem sx={{
-                                        background: "#00000042", borderRadius: 3, height: mobile ? 300 : 100, m: 2,
-                                        display: "flex",
-                                        justifyContent: "space-around",
-                                        alignItems: "center",
-                                        flexDirection: mobile ? "column" : "row",
-                                    }}>
-                                        <Grid
-                                            sx={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                alignItems: "center",
-                                                flexDirection: "column",
-                                            }}
-                                        >
-                                            <ListItemText sx={{ color: "#00beff" }} primary="Host" />
-                                            <ListItemText sx={{ color: "white", textAlign: "center" }} primary={event.host} />
-                                        </Grid>
-                                        <Grid
-                                            sx={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                alignItems: "center",
-                                                flexDirection: "column",
-                                            }}
-                                        >
-                                            <ListItemText sx={{ color: "#00beff" }} primary="Platform" />
-                                            <ListItemText sx={{ color: "white", textAlign: "center" }} primary={event.platform} />
-                                        </Grid>
-                                        <Grid
-                                            sx={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                alignItems: "center",
-                                                flexDirection: "column",
-                                            }}
-                                        >
-                                            <ListItemText sx={{ color: "#00beff" }} primary="Event Name" />
-                                            <ListItemText sx={{ color: "white", textAlign: "center" }} primary={event.title} />
-                                        </Grid>
-                                        <Grid
-                                            sx={{
-                                                display: "flex",
-                                                justifyContent: "center",
-                                                alignItems: "center",
-                                                flexDirection: "column",
-                                            }}
-                                        >
-                                            <Link href={event.link}>
-                                                <ListItemText sx={{ color: "white", textDecoration: "underline" }} primary="Go to event" />
-                                            </Link>
-                                        </Grid>
-                                    </ListItem>
+                                    <ExpandableListItem event={event} mobile={mobile} expandedContent={true} />
                                 )
                             })}
                         </List>
